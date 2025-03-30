@@ -25,7 +25,7 @@ export default function Sidebar() {
             </Link>
           </li>
           <li>
-            <Link href="/movimientos/revisar" className="block p-2 hover:bg-gray-100 rounded font-semibold">
+            <Link href="/movimientos/revision-gastos" className="block p-2 hover:bg-gray-100 rounded font-semibold">
               Revisar Movimientos
             </Link>
           </li>
