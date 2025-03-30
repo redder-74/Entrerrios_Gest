@@ -73,6 +73,9 @@ export default function UploadPage() {
           <label className="block text-sm font-medium text-gray-700 mb-2">
             Selecciona archivos Excel
           </label>
+          <label className="block text-sm font-medium text-gray-700 mb-2">
+            El fichero tiene que tener el nombre del banco en su nombre para autodetectarlo.
+          </label>
           <input
             type="file"
             onChange={handleFileChange}
