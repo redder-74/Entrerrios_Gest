@@ -19,7 +19,7 @@ export default function RevisionGastos() {
       const { data, error } = await supabase
         .from('TbMovimientos')
         .select('*')
-        .eq('Revisado', false)
+        .or('Revisado.is.false,Revisado.is.null')
         .lt('Importe', 0)
         .order('FechaValor', { ascending: true })
 
