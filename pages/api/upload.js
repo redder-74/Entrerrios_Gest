@@ -355,4 +355,3 @@ function detectTransactionType(amount, description) {
   if (desc.includes('ingreso')) return 4
   return amount >= 0 ? 5 : 6 // Otros (positivo/negativo)
 }
-}
