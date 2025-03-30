@@ -24,12 +24,13 @@ export default function RevisionGastos() {
         .order('FechaValor', { ascending: true })
 
       if (error) throw error
+      console.log('Movimientos encontrados:', data?.length) // Para depuración
       setMovimientos(data || [])
       
       // Inicializar los estados para los dropdowns y checkboxes
       const initialTipos = {}
       const initialRevisados = {}
-      data.forEach(mov => {
+      data?.forEach(mov => {
         initialTipos[mov.id] = ''
         initialRevisados[mov.id] = false
       })
