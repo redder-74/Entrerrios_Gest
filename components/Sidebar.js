@@ -24,7 +24,11 @@ export default function Sidebar() {
               Subir Movimientos
             </Link>
           </li>
-          {/* Añadir más opciones aquí luego */}
+          <li>
+            <Link href="/movimientos/revisar" className="block p-2 hover:bg-gray-100 rounded font-semibold">
+              Revisar Movimientos
+            </Link>
+          </li>
         </ul>
       </nav>
     </div>
