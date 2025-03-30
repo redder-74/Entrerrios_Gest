@@ -9,22 +9,24 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@supabase/supabase-js": "^2.39.0",
+    "@supabase/supabase-js": "^2.49.4",
+    "@types/node": "^20.11.0",
+    "@types/react": "^18.2.45",
+    "autoprefixer": "^10.4.16",
+    "formidable": "^3.5.2",
+    "multer": "^1.4.5-lts.1",
     "next": "^14.1.0",
+    "next-api-route-middleware": "^1.0.2",
+    "next-connect": "^0.12.2",
+    "postcss": "^8.4.31",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "xlsx": "^0.18.5",
-    "next-connect": "^0.13.0",
-    "multer": "^1.4.5-lts.1",
-    "@types/react": "^18.2.45",
-    "@types/node": "^20.11.0",
+    "tailwindcss": "^3.3.5",
     "typescript": "^5.3.0",
-    "autoprefixer": "^10.4.16",
-    "postcss": "^8.4.31",
-    "tailwindcss": "^3.3.5"
+    "xlsx": "^0.18.5"
   },
   "devDependencies": {
-    "@types/multer": "^1.4.7",
+    "@types/multer": "^1.4.12",
     "@types/xlsx": "^0.0.36",
     "eslint": "^8.56.0",
     "eslint-config-next": "14.1.0"
