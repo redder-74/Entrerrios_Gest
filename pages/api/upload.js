@@ -1,3 +1,5 @@
+import { createClient } from '@supabase/supabase-js'
+import * as XLSX from 'xlsx'
 import { IncomingForm } from 'formidable'
 import { promises as fs } from 'fs'
 
@@ -306,8 +308,8 @@ function transformSantanderData(data) {
     const importe = Number(item['Importe']) || 0
 
     return {
-      Fecha: convertDate(item['Fecha Operación']),
-      FechaValor: convertDate(item['Fecha Valor']),
+      Fecha: formatSupabaseDate(item['Fecha Operación']),
+      FechaValor: formatSupabaseDate(item['Fecha Valor']),
       Descripcion: item.Concepto?.slice(0, 255) || '',
       Importe: importe,
       Divisa: item.Divisa || 'EUR',
@@ -352,4 +354,5 @@ function detectTransactionType(amount, description) {
   if (desc.includes('tarjeta')) return 3
   if (desc.includes('ingreso')) return 4
   return amount >= 0 ? 5 : 6 // Otros (positivo/negativo)
+}
 }
