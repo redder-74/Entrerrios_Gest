@@ -27,7 +27,7 @@
   },
   "devDependencies": {
     "@types/multer": "^1.4.12",
-    "@types/xlsx": "^0.0.36",
+    "@types/xlsx": "^0.0.35",
     "eslint": "^8.56.0",
     "eslint-config-next": "14.1.0"
   }

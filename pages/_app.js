@@ -8,5 +8,4 @@ function MyApp({ Component, pageProps }) {
     </Layout>
   );
 }
-
 export default MyApp;
